@@ -1,0 +1,107 @@
+INTERACTIVE_MODELS_PATH: "./weights"
+EXPS_PATH: "./experiments"
+
+# Evaluation datasets
+GRABCUT_PATH: "/home/admin/workspace/project/data/datasets/GrabCut"
+BERKELEY_PATH: "/home/admin/workspace/project/data/datasets/Berkeley"
+DAVIS_PATH: "/home/admin/workspace/project/data/datasets/DAVIS"
+COCO_MVAL_PATH: "/home/admin/workspace/project/data/datasets/COCO_MVal"
+PASCALVOC_PATH: "/home/admin/workspace/project/data/datasets/VOC2012/VOCdevkit/VOC2012"
+DAVIS585_PATH: "/home/admin/workspace/project/data/datasets/InterDavis/Selected_480P"
+BRATS_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/BraTS_2d/val"
+LIDC_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D/val"
+LIDC_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D/test"
+LIDC_FULL_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-FULL/val"
+LIDC_FULL_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-FULL/test"
+LIDC_256_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-256/val"
+DAVIS_2017_VAL_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/DAVIS-2017/val'
+BRATS_SIMPLECLICK_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/SimpleClickBrats'
+LIDC_128_CROPS_TEST_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-128-CROPS/Ts'
+LIDC_128_CROPS_VAL_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-128-CROPS/Val'
+LIDC_128_CROPS_WHITENED_TEST_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-128-CROPS-WHITENED/Ts'
+LIDC_128_CROPS_BOXED_TEST_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-128-CROPS-BOXED/Ts'
+
+KITS23_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/KITS23-2D-TUMOURS/val"
+KITS23_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/KITS23-2D-TUMOURS/test"
+KITS23_FULL_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/KITS23-2D-TUMOURS-FULL/val"
+KITS23_FULL_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/KITS23-2D-TUMOURS-FULL/test"
+
+
+LITS_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LITS_2D/val"
+LITS_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LITS_2D/test"
+LITS_FULL_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LITS_2D_FULL/val"
+LITS_FULL_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LITS_2D_FULL/test"
+
+MD_PANC_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/MD_PANC_2D/val"
+MD_PANC_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/MD_PANC_2D/test"
+MD_PANC_FULL_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/MD_PANC_2D_FULL/val"
+MD_PANC_FULL_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/MD_PANC_2D_FULL/test"
+
+LITS_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LITS_2D/train"
+LITS_FULL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LITS_2D_FULL/train"
+MD_PANC_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/MD_PANC_2D/train"
+MD_PANC_FULL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/MD_PANC_2D_FULL/train"
+
+COMBINED_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/COMBINED_2D/val"
+COMBINED_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/COMBINED_2D/test"
+COMBINED_FULL_VAL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/COMBINED_2D_FULL/val"
+COMBINED_FULL_TEST_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/COMBINED_2D_FULL/test"
+COMBINED_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/COMBINED_2D/train"
+COMBINED_FULL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/COMBINED_2D_FULL/train"
+
+# Train datasets
+SBD_PATH: "/home/admin/workspace/project/data/datasets/SBD/dataset"
+COCO_PATH: "/home/xizhi.cx/data/dataset/COCO"
+LVIS_PATH: "/home/admin/workspace/project/data/datasets/COCO_LVIS"
+LVIS_v1_PATH: "/home/admin/workspace/project/data/datasets/COCO_LVIS"
+OPENIMAGES_PATH: "/home/xizhi.cx/data/dataset/OpenImage"
+ADE20K_PATH: "/home/admin/workspace/project/data/datasets/ADE20K"
+BRATS_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/BraTS_2d/train"
+LIDC_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D/train"
+LIDC_FULL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-FULL/train"
+LIDC_256_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-256/train"
+LIDC_128_CROPS_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-128-CROPS/Tr'
+LIDC_128_CROPS_WHITENED_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-128-CROPS-WHITENED/Tr'
+LIDC_128_CROPS_BOXED_PATH: '/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-128-CROPS-BOXED/Tr'
+
+KITS23_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/KITS23-2D-TUMOURS/train"
+KITS23_FULL_PATH: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/KITS23-2D-TUMOURS-FULL/train"
+
+# Test datasets
+test_datasets:
+  LIDC: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D/test"
+  LIDC_FULL: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/datasets/processed_datasets/LIDC-2D-FULL/test"
+
+# Extra options for training
+THINOBJECT_PATH: "/home/admin/workspace/project/data/datasets/ThinObject/ThinObject5K"
+MSRA10K_PATH: "/home/admin/workspace/project/data/datasets/Saliency/MSRA10K_Imgs_GT/Imgs"
+DUT_TR_PATH: "/home/admin/workspace/project/data/datasets/Saliency/DUTS-TR/DUTS-TR-Image"
+DUT_TE_PATH: "/home/admin/workspace/project/data/datasets/Saliency/DUTS-TE/DUTS-TE-Image"
+YTBVOS_PATH: "/home/admin/workspace/project/data/datasets/YTBVOS"
+HFLICKER_PATH: "/home/admin/workspace/project/data/datasets/HFlickr"
+
+
+# You can download the weights for HRNet from the repository:
+# https://github.com/HRNet/HRNet-Image-Classification
+IMAGENET_PRETRAINED_MODELS:
+  HRNETV2_W18_SMALL: "/home/admin/workspace/project/data/weights/hrnet_w18_small_model_v2.pth"
+  HRNETV2_W18: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/repos/ritm_interactive_segmentation/pretrained_models/hrnetv2_w18_imagenet_pretrained.pth"
+  HRNETV2_W32: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/repos/ritm_interactive_segmentation/pretrained_models/hrnetv2_w32_imagenet_pretrained.pth"
+  HRNETV2_W40: "./pretrained_models/hrnetv2_w40_imagenet_pretrained.pth"
+  HRNETV2_W48: "./pretrained_models/hrnetv2_w48_imagenet_pretrained.pth"
+  SEGFORMER_B0: "/home/admin/workspace/project/data/weights/Segformer/mit_b0.pth"
+  SEGFORMER_B1: "/home/admin/workspace/project/data/weights/Segformer/mit_b1.pth"
+  SEGFORMER_B3: "/gpfs/space/projects/PerkinElmer/donatasv_experiments/repos/ClickSEG/pretrained_models/segformer_b3_imagenet.pth"
+  PPLCNET_X1 : "/home/admin/workspace/project/data/weights/PPLC/PP-LCNet/PPLCNet_x1_0_ssld_pretrained.pth"
+  MOBILENETV2: "/home/admin/workspace/project/data/weights/mobilenetV2-15498621.pth"
+
+
+
+
+
+
+
+
+
+
+

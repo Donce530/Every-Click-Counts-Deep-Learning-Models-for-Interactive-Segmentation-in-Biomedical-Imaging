@@ -1,0 +1,93 @@
+defaults:
+  - data_paths: paths
+  - preprocessing: settings
+  - _self_
+
+model_type: 'FocalClick'
+model_path: 'models/common/3c_model.py'  # Specify the path to the model script
+exp_name: 'focalclick-fullres-pretrained-normalized' # Specify the experiment name (optional)
+workers: 32        # Number of dataloader threads
+batch_size: 80    # Override model batch size (optional)
+val_batch_size: 80    # Override model validation batch size (optional)
+total_epochs: 230  # Total number of epochs to train 
+epoch_length: -1
+iterative_evaluation_interval: 10 # Interval of iterative evaluation, 0 if disabled
+dataset:
+  train: 'LIDC_2D'  # Dataset to use for training
+  test: 'LIDC_2D_TEST'  # Dataset to use for testing
+  val: 'LIDC_2D_VAL'  # Dataset to use for validation
+
+input_size:
+  height: 256
+  width: 256
+  channels: 3
+
+lr: 0.0005
+lr_scheduling:
+  patience: -1
+  enabled: true
+  milestones: [190,210]
+  gamma: 0.1
+
+target_crop_augmentation:
+  crop_size: 256
+  augment_validation: true
+  low: 0.06
+  high: 0.176
+  crop_probability: 0.8
+
+augmentation_type: 'ritm_standard'
+
+initial_mask_simulation: null
+
+use_prev_mask: true
+dist_map_mode: 'disk'
+dist_map_radius: 5
+overwrite_click_maps: false
+
+iterative_trainer: false
+clicker:
+  mode: 'locked'
+  size_range_modifier: 0.1
+
+early_stopping_patience: 1000
+
+max_clicks_before_backprop: 3
+max_clicks: 24
+
+use_pretrained_weights: true
+pretrained_models:
+  ritm: 'author_pretrained_ritm_32'
+
+one_click_only: false
+
+use_rgb_conv: false
+
+backbone_lr_multiplier: 0.1
+
+wandb:
+  project_name: 'Interactive CT scan segmentation'
+
+# simpleclick params
+upsample: 'x1'
+random_split: false
+layerwise_decay: false
+
+resume_exp: null  # Prefix of the experiment to be continued (optional)
+resume_prefix: 'latest'  # Prefix of the checkpoint to be loaded (optional)
+start_epoch: 0    # Starting epoch for training continuation
+weights: null     # Path to model weights (optional)
+temp_model_path: ''  # Temporary model path (for internal use)
+local_rank: 0     # Local rank (optional)
+distributed: false  # Distributed gpu training (optional)
+
+ngpus: 1          # Number of GPUs (you can specify ngpus or gpus, not both)
+gpus: '0'          # Ids of used GPUs (you can specify ngpus or gpus, not both)
+gpu_ids: null
+multi_gpu: null
+
+hydra:
+  run:
+    dir: ./outputs/training/final_models/${model_type}-${dataset.train}-${exp_name} # dir: ./outputs/training/${now:%Y-%m-%d}/${now:%H-%M-%S}-${model_type}-${dataset.train}-${exp_name}
+  sweep:
+    dir: ./multirun/training/${now:%Y-%m-%d}/${now:%H-%M-%S}-${model_type}-${dataset.train}-${exp_name}

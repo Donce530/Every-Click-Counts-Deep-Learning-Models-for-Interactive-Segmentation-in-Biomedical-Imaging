@@ -1,0 +1,53 @@
+defaults:
+  - data_paths: paths
+  - _self_
+
+checkpoint: ''
+model_dir: ''
+model_training_paths: null
+model_training_parent_dir: null
+datasets: ['LIDC_2D_VAL']
+gpus: '0'
+cpu: false
+target_iou: 1.0
+iou_analysis: false
+n_clicks: 20
+max_clicks: 20
+min_n_clicks: 1
+thresh: 0.5
+clicks_limit: null
+eval_mode: 'cvpr'
+save_ious: false
+print_ious: true
+vis: false
+vis_path: './experiments/vis_val/'
+model_name: null
+logs_path: './evaluation_logs'
+infer_size: 256
+target_crop_r: 1.40
+focus_crop_r: 1.40
+start_progressive_merge: -1
+exp_name: ''
+use_init_mask: False
+force_clicker_config: False
+clicker_config:
+  mode: 'avg'
+  size_range_modifier: 0
+
+preprocessing:
+  force_windowing: false
+  window_min: -1000
+  window_max: 400
+
+zoom_in:
+  enabled: false
+  optimistic_masking: false
+
+predictor:
+  ensure_minimum_focus_crop_size: false
+
+hydra:
+  run:
+    dir: ./outputs/evaluation/final_results/${exp_name} #./outputs/evaluation/${now:%Y-%m-%d}/${now:%H-%M-%S}${exp_name}
+  sweep:
+    dir: ./multirun/evaluation/${now:%Y-%m-%d}/${now:%H-%M-%S}${exp_name}

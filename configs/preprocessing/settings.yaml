@@ -1,0 +1,17 @@
+defaults:
+  - windowing: lidc
+  - _self_
+
+enhancements:
+  contrast: -1
+  brightness: -1
+  sharpness: -1
+  gaussian_blur: -1
+
+convert_to_rgb: false
+normalize: true
+num_input_channels: 3
+
+# resize_settings:
+#   enabled: false
+#   dimensions: !!python/tuple [448,448]
